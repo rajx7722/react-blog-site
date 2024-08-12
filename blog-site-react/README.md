@@ -1,0 +1,30 @@
+**steps and important points i thought of while making this project**
+-first we make environment variables.
+-always make them in the root of the project
+-always start with '.'
+
+**Why Use Environment Variables?**
+#Security: Storing sensitive data like API keys or database credentials in environment variables keeps them out of your source code, reducing the risk of accidentally exposing them in version control (e.g., GitHub).
+#Configuration: Environment variables allow you to easily change configuration settings without modifying your code. For example, you can use different variables for development, testing, and production environments.
+#Portability: Environment variables make it easier to move your code between different environments (e.g., from your local machine to a server or a cloud platform) without changing the code itself.
+
+-.env me export ni karte 
+-add this to git ignore
+-make another sample file for environment variables
+-envariables upon change need the project to be restarted in most cases
+-now we wrote log(process.env.REACT_APP_APPWRITE_URL) but it didnt work , as its using the documentation
+of create react app , we used vite to build this , so we will use : import.meta.env.REACT_APP_APPWRITE_URL
+to access environment variables , never learn , read documentation
+-env variable ka naam has to start with VITE_ , its in docs
+-made a backend through service appwrite and filled all the env values from there
+
+-**make a config.js why?**
+1:Instead of repeatedly referencing import.meta.env throughout your components, you can import config.js and access the necessary configuration values in a clean and consistent way.
+2:By storing configuration values (such as URLs, project IDs, and database IDs) in a single file, you make it easier to manage and update them. If you need to change the Appwrite URL or project ID, you only need to do it in one place (config.js), rather than hunting through your entire codebase.
+
+Vendor lockin
+Vendor lock-in refers to a situation where a customer becomes dependent on a particular vendor's products or services and finds it difficult to switch to another vendor without substantial costs, effort, or disruption.
+
+-so we have to write in such a way that if the auth has to be removed out of appwrite 
+there will be not much problem
+-so we introduce concept of services (same in each language)
