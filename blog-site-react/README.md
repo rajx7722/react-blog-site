@@ -28,3 +28,8 @@ Vendor lock-in refers to a situation where a customer becomes dependent on a par
 -so we have to write in such a way that if the auth has to be removed out of appwrite 
 there will be not much problem
 -so we introduce concept of services (same in each language)
+-so thats why we write async createaccount method  and async login method and more
+-now whenever we need to change the backend service like firebase or something then just some tweaks in the code
+as per firebase but the frontend will not be affected as it will just know to call the fns whose names will remain
+same.
+-we can use this same auth,js snippet for all appwrite backewnd auth.js files for other projects
