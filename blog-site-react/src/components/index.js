@@ -1,7 +1,19 @@
 import Header from "./header/Header"
 import Footer from "./footer/Footer"
+import Container from "./container/Container"
+import Logo from "./Logo"
+import LogoutBtn from "./header/LogoutBtn"
+import PostCard from "./Postcard"
+import Button from './Button'
+import Input from './Input'
 
 export {
     Header,
-    Footer
+    Footer,
+    Container,
+    Logo,
+    LogoutBtn,
+    PostCard,
+    Button,
+    Input,
 }
