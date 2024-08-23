@@ -60,3 +60,7 @@ always do ...register
 -now make Signup.jsx
 done 
 -now create authLayout : its a mechanism on how to protect pages or routes , we create a container 
+-RTE banaya , postForm bana rahe...
+-in post form see documentation from # "https://react-hook-form.com/get-started#IntegratingwithUIlibraries"
+-creating slugtransform in postform , 2 input fields , title and slug , watch title and give - wherever space in title
+-now reading about postform.jsx , its confusing, gpting it
